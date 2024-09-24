@@ -37,7 +37,7 @@ Env setup:
 conda create -n gridworld python=3.8 -y
 conda activate gridworld
 
-git clone git@github.com:NREL/PowerGridworld.git
+git clone https://github.com/NREL/PowerGridworld.git
 cd PowerGridWorld
 pip install -e .
 pip install -r requirements.txt
@@ -45,11 +45,11 @@ pip install -r requirements.txt
 
 We have also added a `pyproject.toml` file to support the use of [poetry](https://python-poetry.org/docs/).  If using poetry, simply do `poetry install`.
 
-Run the pytests to sanity check:
+Run the pytest to sanity check:
 
 ```
 pytest tests/
-pytests --nbmake examples/envs
+pytest --nbmake examples/envs
 ```
 
 ### Examples
